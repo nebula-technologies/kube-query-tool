@@ -2,6 +2,13 @@
 name = "kube-query-tools"
 version = "0.1.0"
 edition = "2021"
+authors = ["Anders Blenstrup-Pedersen <abp-git@ryuu.technology>"]
+description = "Kube Query Tool"
+readme = "README.md"
+categories = [""]
+keywords = ["Kubernetes", "Query", "Resource-Query"]
+license = "MIT"
+repository = "https://github.com/nebula-technologies/kube-query-tool.git"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
