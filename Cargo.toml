@@ -1,0 +1,22 @@
+[package]
+name = "kube-query-tools"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+kube-resource-extras = {path="../kube-resource-extras", features=["istio"]}
+serde = "*"
+serde_derive = "*"
+k8s-openapi = { version = "0.14.0", default-features = false, features = ["v1_22"] }
+kube-core = "0.71.0"
+kube = { version = "0.71.0", features = ["runtime","derive", "admission"] }
+railsgun = "1.0.3"
+serde_json = "1.0.81"
+serde_yaml = "0.8.24"
+regex = { version="1.5.5", features = ["use_std"]}
+data-query = {version="0.1.6", features = ["jq"]}
+
+[dev-dependencies]
+tokio = {version = "1.18.2", features = ["rt"]}
