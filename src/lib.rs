@@ -1,5 +1,6 @@
 extern crate data_query;
 extern crate regex;
+extern crate kube_resource_extras;
 
 pub mod constant;
 pub mod kubernetes;
@@ -12,6 +13,10 @@ use kube::Error;
 pub use kubernetes::ResourceQuery;
 
 pub use resource_type::ResourceType;
+
+pub mod prelude {
+    pub use kube_resource_extras::*;
+}
 
 pub type KubeQueryResult<T> = Result<T, KubeQueryError>;
 

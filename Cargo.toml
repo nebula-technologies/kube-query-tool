@@ -13,7 +13,7 @@ repository = "https://github.com/nebula-technologies/kube-query-tool.git"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-kube-resource-extras = { version = "0.1.0", features = ["istio"] }
+kube-resource-extras = { version = "0.1.1", features = ["istio"] }
 serde = "1.0.137"
 serde_derive = "1.0.137"
 k8s-openapi = { version = "0.14.0", default-features = false, features = ["v1_22"] }
